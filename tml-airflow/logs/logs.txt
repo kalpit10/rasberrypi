@@ -10234,3 +10234,4 @@ Already up to date.
 [INFO 2024-10-17_20:23:47] Deleting topic iot-preprocess in tml_system_step_2_kafka_createtopic_dag-MYFIRSTPROJECT-bfac.py
 [INFO 2024-10-17_20:23:53] Deleting topic iot-preprocess2 in tml_system_step_2_kafka_createtopic_dag-MYFIRSTPROJECT-bfac.py
 [INFO 2024-10-17_20:23:59] Deleting topic ml-data in tml_system_step_2_kafka_createtopic_dag-MYFIRSTPROJECT-bfac.py
+[INFO 2024-10-17_20:24:03] Deleting topic prediction-data in tml_system_step_2_kafka_createtopic_dag-MYFIRSTPROJECT-bfac.py
