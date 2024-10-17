@@ -10238,3 +10238,4 @@ Already up to date.
 [INFO 2024-10-17_20:24:08] Deleting topic cisco-network-privategpt in tml_system_step_2_kafka_createtopic_dag-MYFIRSTPROJECT-bfac.py
 [INFO 2024-10-17_20:24:24] Localfile producing DAG in tml_read_LOCALFILE_step_3_kafka_producetotopic_dag-MYFIRSTPROJECT-bfac.py
 [INFO 2024-10-17_20:24:30] Preprocessing DAG in tml_system_step_4_kafka_preprocess_dag-MYFIRSTPROJECT-bfac.py
+[INFO 2024-10-17_20:24:38] Machine Learning DAG in tml_system_step_5_kafka_machine_learning_dag-MYFIRSTPROJECT-bfac.py
