@@ -10211,3 +10211,4 @@ Already up to date.
 [INFO 2024-10-03_21:11:41] TML Solution Studio: git push Status for project MYFIRSTPROJECT-bfac: Everything up-to-date
 [INFO 2024-10-17_20:05:15] Deleting topic iot-raw-data in tml_system_step_2_kafka_createtopic_dag-MYFIRSTPROJECT-bfac.py
 [INFO 2024-10-17_20:05:22] Deleting topic iot-preprocess in tml_system_step_2_kafka_createtopic_dag-MYFIRSTPROJECT-bfac.py
+[INFO 2024-10-17_20:05:28] Deleting topic iot-preprocess2 in tml_system_step_2_kafka_createtopic_dag-MYFIRSTPROJECT-bfac.py
