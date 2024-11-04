@@ -5,7 +5,7 @@ import sys
 from datetime import datetime
 
 default_args = {
-  'mqtt_broker' : 'b526253c5560459da5337e561c142369.s1.eu.hivemq.cloud', # <<<****** Enter MQTT broker i.e. test.mosquitto.org
+  'mqtt_broker' : '89ed2b153bf1470e81b2e503fe3b3249.s1.eu.hivemq.cloud', # <<<****** Enter MQTT broker i.e. test.mosquitto.org
   'mqtt_port' : '8883', # <<<******** Enter MQTT port i.e. 1883    
   'mqtt_subscribe_topic' : 'tml/iot', # <<<******** enter name of MQTT to subscribe to i.e. encyclopedia/#
   'mqtt_enabletls' : '1', # << Enable TLS if connecting to a cloud cluster like HiveMQ
@@ -21,8 +21,8 @@ sys.dont_write_bytecode = True
 
 
 def mqttconnection():
-     username="<Enter MQTT username>"
-     password="<Enter MQTT password>"
+     username="kalpit.swami@gmail.com"
+     password="CYT-160-Project2!@"
 
      client = paho.Client(paho.CallbackAPIVersion.VERSION2)
      mqttBroker = default_args['mqtt_broker'] 
@@ -76,5 +76,5 @@ def readdatafile(client,inputfile):
       pass
 
 client=mqttconnection()
-inputfile = "IoTDatasample.txt"
+inputfile = "cisco_network_data.txt"
 readdatafile(client,inputfile)
