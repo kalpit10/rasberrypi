@@ -10321,3 +10321,4 @@ Already up to date.
 [INFO 2024-11-04_21:47:50] PrivateGPT Step 9 DAG in tml_system_step_9_privategpt_qdrant_dag-CYT-160-Project2-Revised-Final-bfac.py
 [ERROR 2024-11-04_22:11:56] PrivateGPT Step 9 DAG in tml_system_step_9_privategpt_qdrant_dag-CYT-160-Project2-Revised-Final-bfac.py 'StreamTopicDetails'
 [INFO 2024-11-04_22:22:05] Deleting topic cisco-network-mainstream in tml_system_step_2_kafka_createtopic_dag-CYT-160-Project2-Revised-Final-bfac.py
+[INFO 2024-11-04_22:23:09] Deleting topic cisco-network-preprocess in tml_system_step_2_kafka_createtopic_dag-CYT-160-Project2-Revised-Final-bfac.py
