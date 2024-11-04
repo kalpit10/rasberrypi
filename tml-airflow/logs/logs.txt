@@ -10310,3 +10310,4 @@ Already up to date.
 [INFO 2024-11-04_21:35:43] TML Solution Studio: git push Status for project CYT-160-Project2-Revised-Final-bfac: Everything up-to-date
 [INFO 2024-11-04_21:46:37] Deleting topic iot-raw-data in tml_system_step_2_kafka_createtopic_dag-CYT-160-Project2-Revised-Final-bfac.py
 [INFO 2024-11-04_21:46:42] Deleting topic iot-preprocess in tml_system_step_2_kafka_createtopic_dag-CYT-160-Project2-Revised-Final-bfac.py
+[INFO 2024-11-04_21:46:47] Deleting topic iot-preprocess2 in tml_system_step_2_kafka_createtopic_dag-CYT-160-Project2-Revised-Final-bfac.py
