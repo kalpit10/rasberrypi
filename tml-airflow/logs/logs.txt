@@ -10244,3 +10244,13 @@ Already up to date.
 [INFO 2024-10-17_20:24:53] Visualization DAG in tml_system_step_7_kafka_visualization_dag-MYFIRSTPROJECT-bfac.py
 [INFO 2024-10-17_20:25:17] Docker DAG in tml_system_step_8_deploy_solution_to_docker_dag-MYFIRSTPROJECT-bfac.py
 [INFO 2024-10-17_20:25:41] {'name': ['Project with slug "myfirstproject-bfac" already exists.']}
+[INFO 2024-11-04_18:53:49] TML Solution Studio: TML Project Creation: Creating new TML project: /rasberrypi/tml-airflow/dags/tml-solutions/CYT-160-Project2-bfac
+[INFO 2024-11-04_18:53:50] TML Solution Studio: git pull --rebase --autostash origin main Status: From https://github.com/kalpit10/rasberrypi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[INFO 2024-11-04_18:54:29] TML Solution Studio: Starting Git commit process for project: CYT-160-Project2-bfac
+[INFO 2024-11-04_18:54:29] TML Solution Studio: git commit -a Status for project CYT-160-Project2-bfac: fatal: paths 'project ...' with -a does not make sense
+[INFO 2024-11-04_18:54:30] TML Solution Studio: git push origin main Status: Everything up-to-date
+[INFO 2024-11-04_18:54:30] TML Solution Studio: git add . Status: 
+[INFO 2024-11-04_18:54:30] TML Solution Studio: git commit -a Status for project CYT-160-Project2-bfac: fatal: paths 'project ...' with -a does not make sense
+[INFO 2024-11-04_18:54:31] TML Solution Studio: git push Status for project CYT-160-Project2-bfac: Everything up-to-date
