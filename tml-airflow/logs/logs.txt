@@ -10316,3 +10316,4 @@ Already up to date.
 [INFO 2024-11-04_21:47:02] Deleting topic cisco-network-privategpt in tml_system_step_2_kafka_createtopic_dag-CYT-160-Project2-Revised-Final-bfac.py
 [INFO 2024-11-04_21:47:23] MQTT producing DAG in tml_read_MQTT_step_3_kafka_producetotopic_dag-CYT-160-Project2-Revised-Final-bfac.py
 [ERROR 2024-11-04_21:47:25] ERROR: Cannot connect to MQTT broker in tml_read_MQTT_step_3_kafka_producetotopic_dag-CYT-160-Project2-Revised-Final-bfac.py - invalid literal for int() with base 10: ''
+[INFO 2024-11-04_21:47:30] Preprocessing DAG in tml_system_step_4_kafka_preprocess_dag-CYT-160-Project2-Revised-Final-bfac.py
