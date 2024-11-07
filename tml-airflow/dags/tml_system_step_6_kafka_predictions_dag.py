@@ -19,7 +19,7 @@ default_args = {
   'enabletls': '1',   # <<< *** 1=connection is encrypted, 0=no encryption
   'microserviceid' : '', # <<< *** leave blank
   'producerid' : 'iotsolution',    # <<< *** Change as needed   
-  'preprocess_data_topic' : 'iot-preprocess-data', # << *** data for the independent variables - You created this in STEP 2
+  'preprocess_data_topic' : 'iot-preprocess', # << *** data for the independent variables - You created this in STEP 2
   'ml_prediction_topic' : 'iot-ml-prediction-results-output', # topic to store the predictions - You created this in STEP 2
   'description' : 'TML solution',    # <<< *** Change as needed   
   'companyname' : 'Your company', # <<< *** Change as needed      
@@ -29,18 +29,18 @@ default_args = {
   'brokerport' : '-999', # <<< *** Leave as is
   'streamstojoin' : 'Voltage_preprocessed_AnomProb,Current_preprocessed_AnomProb', # << ** These are the streams in the preprocess_data_topic for these independent variables
   'inputdata' : '', # << ** You can specify independent variables manually - rather than consuming from the preprocess_data_topic stream
-  'consumefrom' : 'ml-data', # << This is ml_data_topic in STEP 5 that contains the estimated parameters
+  'consumefrom' : '', # << This is ml_data_topic in STEP 5 that contains the estimated parameters
   'mainalgokey' : '', # leave blank
   'offset' : '-1', # << ** input data will start from the end of the preprocess_data_topic and rollback maxrows
   'delay' : '60', # << network delay parameter 
-  'usedeploy' : '', # << 1=use algorithms in ./deploy folder, 0=use ./models folder
+  'usedeploy' : '1', # << 1=use algorithms in ./deploy folder, 0=use ./models folder
   'networktimeout' : '6000', # << additional network parameter 
-  'maxrows' : '',  # << ** the number of offsets to rollback - For example, if 50, you will get 50 predictions continuously 
+  'maxrows' : '50',  # << ** the number of offsets to rollback - For example, if 50, you will get 50 predictions continuously 
   'produceridhyperprediction' : '',  # << leave blank
   'consumeridtraininedparams' : '',  # << leave blank
   'groupid' : '',  # << leave blank
   'topicid' : '-1',   # << leave as is
-  'pathtoalgos' : '/Viper-ml/viperlogs/iotlogistic', # << this is specified in fullpathtotrainingdata in STEP 5
+  'pathtoalgos' : '', # << this is specified in fullpathtotrainingdata in STEP 5
   'array' : '0', # 0=do not save as array, 1=save as array   
   'HPDEADDR' : 'http://' # Do not modify
 }
@@ -201,12 +201,13 @@ if __name__ == '__main__':
          VIPERPORT=sys.argv[4]
          HPDEHOSTPREDICT=sys.argv[5]
          HPDEPORTPREDICT=sys.argv[6]    
-        
+         tsslogging.locallogs("INFO", "STEP 6: Predictions started")
          while True:
           try:              
             performPrediction()      
-            time.sleep(.5)
+            time.sleep(1)
           except Exception as e:
+            tsslogging.locallogs("ERROR", "STEP 6: Predictions DAG in {} {}".format(os.path.basename(__file__),e))
             tsslogging.tsslogit("Predictions DAG in {} {}".format(os.path.basename(__file__),e), "ERROR" )                     
             tsslogging.git_push("/{}".format(repo),"Entry from {}".format(os.path.basename(__file__)),"origin")
             break
