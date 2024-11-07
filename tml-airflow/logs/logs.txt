@@ -10375,3 +10375,6 @@ origin	https://<personal access token hidden>@github.com/kalpit10/rasberrypi.git
 [INFO 2024-11-07_21:39:20] TML Solution Studio: DELETE initiated for project MYFIRSTPROJECT-bfac by kalpit10
 [INFO 2024-11-07_21:39:20] TML Solution Studio: GIT REPO MYFIRSTPROJECT-bfac DELETED by kalpit10
 [INFO 2024-11-07_21:39:20] TML Solution Studio: LOCAL DOCKER IMAGE MYFIRSTPROJECT-bfac-amd64 DELETED by kalpit10
+[INFO 2024-11-07_21:40:31] TML Solution Studio: DELETE initiated for project MYFIRSTPROJECT2-ml-bfac by kalpit10
+[INFO 2024-11-07_21:40:31] TML Solution Studio: GIT REPO MYFIRSTPROJECT2-ml-bfac DELETED by kalpit10
+[INFO 2024-11-07_21:40:31] TML Solution Studio: LOCAL DOCKER IMAGE MYFIRSTPROJECT2-ml-bfac-amd64 DELETED by kalpit10
