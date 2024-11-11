@@ -10454,3 +10454,4 @@ Already up to date.
 [INFO 2024-11-11_16:47:34] TML Solution Studio: git push Status for project finalproject-bfac: Everything up-to-date
 [INFO 2024-11-11_17:10:11] Deleting topic cisco-network-mainstream in tml_system_step_2_kafka_createtopic_dag-finalproject-bfac.py
 [INFO 2024-11-11_17:10:16] Deleting topic cisco-network-preprocess in tml_system_step_2_kafka_createtopic_dag-finalproject-bfac.py
+[INFO 2024-11-11_17:10:21] Deleting topic ml-data in tml_system_step_2_kafka_createtopic_dag-finalproject-bfac.py
