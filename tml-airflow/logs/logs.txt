@@ -10460,3 +10460,4 @@ Already up to date.
 [INFO 2024-11-11_17:10:47] MQTT producing DAG in tml_read_MQTT_step_3_kafka_producetotopic_dag-finalproject-bfac.py
 [INFO 2024-11-11_17:10:55] Preprocessing DAG in tml_system_step_4_kafka_preprocess_dag-finalproject-bfac.py
 [INFO 2024-11-11_17:10:59] Visualization DAG in tml_system_step_7_kafka_visualization_dag-finalproject-bfac.py
+[INFO 2024-11-11_17:11:23] PrivateGPT Step 9 DAG in tml_system_step_9_privategpt_qdrant_dag-finalproject-bfac.py
