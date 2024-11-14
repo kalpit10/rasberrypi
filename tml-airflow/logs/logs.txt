@@ -10520,3 +10520,4 @@ origin	https://<personal access token hidden>@github.com/kalpit10/rasberrypi.git
 [INFO 2024-11-14_20:43:52] Docker DAG in tml_system_step_8_deploy_solution_to_docker_dag-finalproject-bfac.py
 [INFO 2024-11-14_20:46:34] {'name': ['Project with slug "finalproject-bfac" already exists.']}
 [INFO 2024-11-14_21:04:12] Deleting topic cisco-network-mainstream in tml_system_step_2_kafka_createtopic_dag-finalproject-bfac.py
+[INFO 2024-11-14_21:05:18] Deleting topic cisco-network-preprocess in tml_system_step_2_kafka_createtopic_dag-finalproject-bfac.py
