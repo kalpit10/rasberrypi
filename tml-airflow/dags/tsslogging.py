@@ -9,6 +9,7 @@ import socketserver
 import subprocess
 import os
 import socket
+import time
 
 def genkubeyaml(sname,containername,clientport,solutionairflowport,solutionvipervizport,solutionexternalport,sdag,guser,grepo,chip,dockerusername,externalport,kuser,mqttuser,airflowport,vipervizport):
     cp = ""
@@ -118,19 +119,26 @@ def genkubeyaml(sname,containername,clientport,solutionairflowport,solutionviper
                value: '<ENTER MQTT PASSWORD>'
              - name: READTHEDOCS
                value: '<ENTER READTHEDOCS TOKEN>'
+             - name: qip 
+               value: 'localhost' # This is private GPT IP              
              - name: KUBE
                value: '1'
            volumes: 
            - name: dockerpath
              hostPath:
                path: /var/run/docker.sock
-     ---
+           dnsPolicy: "None"
+           dnsConfig:
+             nameservers:
+               - 8.8.8.8                
+               
+   ---
      apiVersion: v1
      kind: Service
      metadata:
-       name: {}
+       name: {}-service
        labels:
-         app: {}
+         app: {}-service
      spec:
        type: NodePort #Exposes the service as a node ports
        ports:
@@ -139,6 +147,16 @@ def genkubeyaml(sname,containername,clientport,solutionairflowport,solutionviper
          app: {}""".format(sname,sname,sname,sname,containername,cp,sname,sdag,guser,grepo,solutionexternalport,chip,solutionairflowport,solutionvipervizport,dockerusername,cpp,externalport,kuser,vipervizport,mqttuser,airflowport,sname,sname,cs,sname)  
 
     return kcmd
+
+def getqip():
+    subprocess.call("/tmux/qip.sh", shell=True)
+    time.sleep(3)
+    with open("/tmux/qip.txt", "r") as file1:
+    # Reading from a file
+     qip=file1.read()
+     qip=qip.rstrip()
+     os.environ['qip']=qip  
+        
     
 def testvizconnection(portnum):
    good = 1
