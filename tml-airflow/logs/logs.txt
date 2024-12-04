@@ -10742,3 +10742,4 @@ origin	https://<personal access token hidden>@github.com/kalpit10/rasberrypi.git
 [INFO 2024-12-04_04:18:30] Deleting topic prediction-data in tml_system_step_2_kafka_createtopic_dag.py
 [INFO 2024-12-04_04:18:33] Deleting topic cisco-network-privategpt in tml_system_step_2_kafka_createtopic_dag.py
 [INFO 2024-12-04_04:18:45] MQTT producing DAG in tml_read_MQTT_step_3_kafka_producetotopic_dag.py
+[ERROR 2024-12-04_04:18:46] ERROR: Cannot connect to MQTT broker in tml_read_MQTT_step_3_kafka_producetotopic_dag.py - invalid literal for int() with base 10: ''
