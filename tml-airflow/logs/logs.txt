@@ -10738,3 +10738,4 @@ origin	https://<personal access token hidden>@github.com/kalpit10/rasberrypi.git
 [INFO 2024-12-04_04:18:17] Deleting topic iot-raw-data in tml_system_step_2_kafka_createtopic_dag.py
 [INFO 2024-12-04_04:18:21] Deleting topic iot-preprocess in tml_system_step_2_kafka_createtopic_dag.py
 [INFO 2024-12-04_04:18:24] Deleting topic iot-preprocess2 in tml_system_step_2_kafka_createtopic_dag.py
+[INFO 2024-12-04_04:18:27] Deleting topic ml-data in tml_system_step_2_kafka_createtopic_dag.py
