@@ -10754,3 +10754,4 @@ origin	https://<personal access token hidden>@github.com/kalpit10/rasberrypi.git
 [INFO 2024-12-04_04:22:12] Deleting topic ml-data in tml_system_step_2_kafka_createtopic_dag-finalproject-bfac.py
 [INFO 2024-12-04_04:22:15] Deleting topic prediction-data in tml_system_step_2_kafka_createtopic_dag-finalproject-bfac.py
 [INFO 2024-12-04_04:22:19] Deleting topic cisco-network-privategpt in tml_system_step_2_kafka_createtopic_dag-finalproject-bfac.py
+[INFO 2024-12-04_04:22:30] MQTT producing DAG in tml_read_MQTT_step_3_kafka_producetotopic_dag-finalproject-bfac.py
